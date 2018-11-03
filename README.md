@@ -1,5 +1,13 @@
 # Laravel Spark SSO
---------------------
+
+This package manges the OAuth handshake with Google so people can join
+you Laravel Spark based project even faster. Teams can configure their SSO domain
+so if they use GMail for their business, every new signup from that company
+will be added to the team automatically. This is a great way to reduce onboarding
+hurdles and eliminates the need for people to remember another password.
+
+Once installed and configured, users will be able to join and login by going to the following url:
+```https://www.your-awesome-project.com/login/sso/google```
 
 ## Getting Started
 
