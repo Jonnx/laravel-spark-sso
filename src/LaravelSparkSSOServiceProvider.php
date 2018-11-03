@@ -17,6 +17,12 @@ class LaravelSparkSSOServiceProvider extends ServiceProvider
         
         // load migrations
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
+        
+        // load views
+        $this->loadViewsFrom(__DIR__.'/views', 'laravel-spark-sso');
+        $this->publishes([
+            __DIR__.'/views' => resource_path('views/vendor/laravel-spark-sso'),
+        ]);
     }
     
     /**
