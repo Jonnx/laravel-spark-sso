@@ -17,11 +17,27 @@ composer require jonnx/laravel-spark-sso
 To achieve this, update your ```config/app.php``` file by adding the following lines
 
 ```
-/**
- * Package Service Providers...
- */
-Jonnx\LaravelSparkSSO\LaravelSparkSSOServiceProvider::class,
-Laravel\Socialite\SocialiteServiceProvider::class,
+'providers' => [
+    ...
+    
+    /**
+     * Package Service Providers...
+     */
+    Jonnx\LaravelSparkSSO\LaravelSparkSSOServiceProvider::class,
+    Laravel\Socialite\SocialiteServiceProvider::class,
+    
+    ...
+]
+
+```
+
+also add the following aliases
+
+```
+'aliases' => [
+    ...
+    'Socialite' => Laravel\Socialite\Facades\Socialite::class,
+]
 ```
 
 ### Update configuration
