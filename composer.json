@@ -9,10 +9,13 @@
             "email": "weigert.jonas@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "laravel/socialite": "^3.0@dev"
+    },
     "autoload": {
         "psr-4": {
             "Jonnx\\LaravelSparkSSO\\": "src"
         }
     },
+    "minimum-stability": "dev"
 }
