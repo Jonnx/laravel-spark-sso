@@ -1,6 +1,6 @@
 <?php
 
-namespace Jonnx\LaravelSparkSSO\Http;
+namespace Jonnx\LaravelSparkSSO\Http\Login\SSO;
 
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -11,11 +11,11 @@ use Auth;
 use App\User;
 use App\Team;
 
-class GoogleSSOController extends BaseController
+class GoogleController extends BaseController
 {
     use AuthorizesRequests, ValidatesRequests;
     
-    public function redirectToProvider()
+    public function redirect()
     {
         return Socialite::driver('google')->redirect();
     }
