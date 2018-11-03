@@ -1,0 +1,13 @@
+{
+    "name": "jonnx/laravel-spark-sso",
+    "description": "a simple SSO solution leveraging existing OAuth2 services",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jonas Weigert",
+            "email": "weigert.jonas@gmail.com"
+        }
+    ],
+    "require": {}
+}
