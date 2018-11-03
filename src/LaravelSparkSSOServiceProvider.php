@@ -14,6 +14,9 @@ class LaravelSparkSSOServiceProvider extends ServiceProvider
     {
         // load routes
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
+        
+        // load migrations
+        $this->loadMigrationsFrom(__DIR__.'/database/migrations');
     }
     
     /**
