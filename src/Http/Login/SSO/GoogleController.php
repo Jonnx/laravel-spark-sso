@@ -14,7 +14,7 @@ use App\Team;
 
 class GoogleController extends BaseController
 {
-    use AuthorizesRequests, ValidatesRequests;
+    use AuthorizesRequests, ValidatesRequests, AuthenticatesUsers;
     
     public function redirect()
     {
