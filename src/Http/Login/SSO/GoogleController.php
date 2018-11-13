@@ -5,6 +5,7 @@ namespace Jonnx\LaravelSparkSSO\Http\Login\SSO;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 use Socialite;
 use Auth;
@@ -59,7 +60,7 @@ class GoogleController extends BaseController
     
         // login user and redirect
         Auth::login($user);
-        return redirect('/home');
+        return $this->sendLoginResponse($request);
         
     }
     
