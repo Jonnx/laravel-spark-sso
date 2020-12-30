@@ -45,6 +45,8 @@ also add the following aliases
 'aliases' => [
     ...
     'Socialite' => Laravel\Socialite\Facades\Socialite::class,
+    'User' => Namespace\For\Models\User::class,
+    'Team' => Namespace\For\Models\Team::class,
 ]
 ```
 

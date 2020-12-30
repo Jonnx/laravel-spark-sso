@@ -9,8 +9,8 @@ use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 use Socialite;
 use Auth;
-use App\User;
-use App\Team;
+use User;
+use Team;
 use Illuminate\Support\Str;
 
 class GoogleController extends BaseController
